@@ -1,14 +1,42 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>card-quantity</title>
 </head>
 
 <body>
+  <button onclick="
+    console.log(`Card quantity: ${cardQuantity}`);
+    ">Show Quantity</button>
 
+  `<button onclick="
+      // cardQuantity = cardQuantity + 1;
+      // cardQuantity += 1;
+      cardQuantity ++;
+      console.log(`Card quantity: ${cardQuantity}`);
+    ">Add to Card</butto>
+
+    <button onclick="
+      // cardQuantity = cardQuantity + 2;
+      cardQuantity += 2;
+      console.log(`Card quantity: ${cardQuantity}`);
+    ">+2</button>
+
+    <button onclick="
+      // cardQuantity = cardQuantity + 3;
+      cardQuantity += 3;
+      console.log(`Card quantity: ${cardQuantity}`);
+    ">+3</button>
+
+    <button onclick="
+      cardQuantity = 0;
+      console.log('Card was reset.');
+      console.log(`Card quantity: ${cardQuantity}`);
+    ">Reset</button>;
+    <script>
+      let cardQuantity = 0;
+    </script>
 </body>
 
 </html>
